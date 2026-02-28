@@ -1,10 +1,10 @@
-package com.api.insurance_management_platform;
+package com.api.insured-assurance;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class InsuranceManagementPlatformApplication {
+public class InsuredAssuranceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(InsuranceManagementPlatformApplication.class, args);

@@ -10,17 +10,25 @@ jobs:
           uses: advanced-security/maven-dependency-submission-action@v3
           continue-on-error: true
 
-        - name: scp ssh pipelines
+        - name: scp ssh pipelines - Copy WAR to server
           uses: appleboy/scp-action@master
           with:
             host: ${{secrets.HOST}}
-            user: ${{secrets.USERNAME}}
-            pass: ${{secrets.PASSWORD}}
+            username: ${{secrets.USERNAME}}
+            password: ${{secrets.PASSWORD}}
             port: ${{secrets.PORT}}
-            scp: |
-              ./target/*.war => /tmp/
-            last_ssh: |
+            source: "target/*.war"
+            target: "/tmp/"
+        - name: Verify WAR copied
+          uses: aappleboy/ssh-action@masterl
+          with:
+            host: ${{secrets.HOST}}
+            username: ${{secrets.USERNAME}}
+            password: ${{secrets.PASSWORD}}
+            port: ${{secrets.PORT}}
+            script: |
               ls -lart /tmp
+
 
         - name: Invoke Jenkins deployment job
           uses: appleboy/jenkins-action@master

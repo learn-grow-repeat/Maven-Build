@@ -1,4 +1,4 @@
-package com.api.insurance_management_platform.dto;
+package com.api.insuredassurance.dto;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;

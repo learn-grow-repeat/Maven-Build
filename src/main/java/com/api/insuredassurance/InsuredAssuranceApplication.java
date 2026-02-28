@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class InsuredAssuranceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(InsuranceManagementPlatformApplication.class, args);
+		SpringApplication.run(InsuredAssuranceApplication.class, args);
 	}
 
 }

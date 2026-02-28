@@ -1,12 +1,12 @@
-package com.api.insured-assurance.dao;
+package com.api.insuredassurance.dao;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.api.insurance_management_platform.dto.Claim;
-import com.api.insurance_management_platform.repository.ClaimRepository;
+import com.api.insuredassurance.dto.Claim;
+import com.api.insuredassurance.repository.ClaimRepository;
 
 @Repository
 public class ClaimDao {

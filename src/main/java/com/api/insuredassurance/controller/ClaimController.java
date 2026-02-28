@@ -1,4 +1,4 @@
-package com.api.insurance_management_platform.controller;
+package com.api.insuredassurance.controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.api.insurance_management_platform.dto.Claim;
-import com.api.insurance_management_platform.service.ClaimService;
+import com.api.insuredassurance.dto.Claim;
+import com.api.insuredassurance.service.ClaimService;
 
 @RestController
 public class ClaimController {

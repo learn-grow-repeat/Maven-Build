@@ -5,10 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.api.insuredassurance.ClaimDao;
-import com.api.insuredassurance.dao.InsurancePolicyDao;
+import com.api.insuredassurance.dao.ClaimDao;
 import com.api.insuredassurance.dto.Claim;
-import com.api.insuredassurance.dto.InsurancePolicy;
 @Service
 public class ClaimService {
 

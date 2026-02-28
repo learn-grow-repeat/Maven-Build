@@ -1,4 +1,4 @@
-package com.api.insurance_management_platform.dao;
+package com.api.insured-assurance.dao;
 
 import java.util.List;
 

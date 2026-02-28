@@ -20,7 +20,7 @@ jobs:
             source: "target/*.war"
             target: "/tmp/"
         - name: Verify WAR copied
-          uses: aappleboy/ssh-action@masterl
+          uses: appleboy/ssh-action@master
           with:
             host: ${{secrets.HOST}}
             username: ${{secrets.USERNAME}}
